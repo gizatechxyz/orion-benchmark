@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "orion-benchmark"
+version = "0.1.0"
+description = ""
+authors = ["Fran Algaba <f.algaba@outlook.es>"]
+readme = "README.md"
+packages = [{include = "orion_benchmark"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+onnx = "^1.14.0"
+loguru = "^0.7.0"
+onnxruntime = "^1.15.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
