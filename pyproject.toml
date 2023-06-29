@@ -11,6 +11,9 @@ python = "^3.11"
 onnx = "^1.14.0"
 loguru = "^0.7.0"
 onnxruntime = "^1.15.1"
+torch = "^2.0.1"
+torchvision = "^0.15.2"
+onnxsim = "^0.4.33"
 
 
 [build-system]
