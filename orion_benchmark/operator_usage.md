@@ -80,9 +80,6 @@
 | QLinearMatMul                | 29    |
 | And                          | 28    |
 | Min                          | 25    |
-| ErfHere's the continuation of the table:
-
-```markdown
 | Erf                          | 25    |
 | Upsample                     | 23    |
 | GatherElements               | 21    |
@@ -164,9 +161,6 @@
 | Gradient                     | 2     |
 | Sign                         | 2     |
 | ConcatFromSequence           | 2     |
-| SequenceEHere's the continuation and conclusion of the table:
-
-```markdown
 | SequenceErase                | 2     |
 | Acosh                        | 2     |
 | ReverseSequence              | 2     |
