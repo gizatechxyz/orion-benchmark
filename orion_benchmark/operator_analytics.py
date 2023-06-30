@@ -4,7 +4,7 @@ from collections import defaultdict
 from tabulate import tabulate
 
 # Specify the directory you want to search in
-directory = '.'
+directory = './orion_benchmark/models'
 
 # Find all .onnx files in the directory
 onnx_files = [os.path.join(root, file) 
@@ -29,4 +29,4 @@ operator_counts_list = sorted(
 )
 
 # Print the operator counts in a table
-print(tabulate(operator_counts_list, headers=['Operator', 'Count']))
+print(tabulate(operator_counts_list, headers=['Operator', 'Count'], tablefmt="github"))

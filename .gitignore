@@ -135,3 +135,4 @@ smart_contracts/
 ._.DS_Store
 
 **/*.onnx
+**/*.tar.gz
