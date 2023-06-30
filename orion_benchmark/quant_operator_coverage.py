@@ -11,7 +11,7 @@ directory = 'orion_benchmark/models'
 # Find all .onnx files in the directory
 onnx_files = [os.path.join(root, file) 
               for root, dirs, files in os.walk(directory) 
-              for file in files if file.endswith('.onnx')]
+              for file in files if file.endswith('-int8.onnx')]
 
 # Step 3: Load each ONNX file and analyze the operators
 operator_coverage_list = []
@@ -38,3 +38,4 @@ print(tabulate(operator_coverage_list, headers=['Model', 'Coverage'], tablefmt="
 print("\n=====================================")
 print(f'Average coverage: {average_coverage}')
 print("=====================================")
+
