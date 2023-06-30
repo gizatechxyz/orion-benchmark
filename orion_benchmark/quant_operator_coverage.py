@@ -31,10 +31,10 @@ for onnx_file in onnx_files:
     not_implemented_operator_set = operator_types - implemented_operator_set
     total_operator_count = sum(operator_counts.values())
     percentage_coverage = (implemented_operator_count / total_operator_count) * 100 if total_operator_count > 0 else 0
-    operator_coverage_list.append(("/".join(onnx_file.split("/")[-2:]), percentage_coverage))
+    operator_coverage_list.append(("/".join(onnx_file.split("/")[-2:]), percentage_coverage, ", ".join(not_implemented_operator_set)))
 
 average_coverage = sum([x[1] for x in operator_coverage_list]) / len(operator_coverage_list)
-print(tabulate(operator_coverage_list, headers=['Model', 'Coverage'], tablefmt="github"))
+print(tabulate(operator_coverage_list, headers=['Model', 'Coverage', 'Missing Operators'], tablefmt="github"))
 print("\n=====================================")
 print(f'Average coverage: {average_coverage}')
 print("=====================================")

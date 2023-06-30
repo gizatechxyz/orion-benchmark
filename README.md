@@ -6,7 +6,7 @@ In this repository you can find a set of benchmarkings with different model arch
 
 - [ONNX Operators Frequency Usage](./orion_benchmark/operator_usage.md)
 - [ONNX Quantized Operators Frequency Usage](./orion_benchmark/quant_operator_usage.md)
-- [Orion Compatibility Percentage with Quantized ONNX Hub models](./orion_benchmark/quant_operator_coverage.md)
+- [Orion Compatibility Percentage and Missing Operators with Quantized ONNX Hub models](./orion_benchmark/quant_operator_coverage.md)
 - [Orion Compatibility Percentage with ONNX Hub models](./orion_benchmark/operator_coverage.md)
 
 ## Development
