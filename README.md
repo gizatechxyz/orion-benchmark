@@ -79,8 +79,14 @@ python orion_benchmark/operator_analytics.py
 python orion_benchmark/quant_operator_analytics.py
 ```
 
-2. Get model percentage of compatibility with Orion Operators:
+3. Get model percentage of compatibility with Orion Operators:
 
 ```python
-python orion_benchmark/operator_coverage.py
+python orion_benchmark/operator_coverage.py >> orion_benchmark/operator_coverage.md
+```
+
+4. Get model percentage of compatibility with Quant Orion Operators:
+
+```python
+python orion_benchmark/quant_operator_coverage.py >> orion_benchmark/quant_operator_coverage.md
 ```

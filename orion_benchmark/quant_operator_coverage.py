@@ -16,7 +16,7 @@ onnx_files = [os.path.join(root, file)
 # Step 3: Load each ONNX file and analyze the operators
 operator_coverage_list = []
 for onnx_file in onnx_files:
-    print(f'Analyzing operators in {onnx_file}')
+    # print(f'Analyzing operators in {onnx_file}')
     file_path = onnx_file
     model = onnx.load(file_path)
     
@@ -35,7 +35,5 @@ for onnx_file in onnx_files:
 
 average_coverage = sum([x[1] for x in operator_coverage_list]) / len(operator_coverage_list)
 print(tabulate(operator_coverage_list, headers=['Model', 'Coverage', 'Missing Operators'], tablefmt="github"))
-print("\n=====================================")
-print(f'Average coverage: {average_coverage}')
-print("=====================================")
+print(f'\nAverage coverage: {average_coverage}')
 
