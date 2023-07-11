@@ -26,7 +26,7 @@ for onnx_file in onnx_files:
     operator_counts = Counter(operator_types)
     
     # Calculate the percentage coverage of operators    
-    implemented_operator_set = {op.op_name for op in ImplementedOperators}
+    implemented_operator_set = {op.op_name for op in ImplementedOperators if op.is_supported}
     implemented_operator_count = sum(operator_counts[op] for op in operator_types if op in implemented_operator_set)
     not_implemented_operator_set = operator_types - implemented_operator_set
     total_operator_count = sum(operator_counts.values())
