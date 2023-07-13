@@ -9,6 +9,7 @@ In this repository you can find a set of benchmarkings with different model arch
 - [Orion Compatibility Percentage and Missing Operators with Quantized ONNX Hub models](./orion_benchmark/quant_operator_coverage.md)
 - [Orion Compatibility Percentage with ONNX Hub models](./orion_benchmark/operator_coverage.md)
 - [Transpiler + Oion Compatibility with ONNX Hub models](./orion_benchmark/cairo_models.md)
+- [Compilation time of Transpiled models from ONNX Hub](./orion_benchmark/cairo_compile.md)
 
 ## Development
 
