@@ -8,6 +8,7 @@ In this repository you can find a set of benchmarkings with different model arch
 - [ONNX Quantized Operators Frequency Usage](./orion_benchmark/quant_operator_usage.md)
 - [Orion Compatibility Percentage and Missing Operators with Quantized ONNX Hub models](./orion_benchmark/quant_operator_coverage.md)
 - [Orion Compatibility Percentage with ONNX Hub models](./orion_benchmark/operator_coverage.md)
+- [Transpiler + Oion Compatibility with ONNX Hub models](./orion_benchmark/cairo_models.md)
 
 ## Development
 
@@ -89,4 +90,9 @@ python orion_benchmark/operator_coverage.py >> orion_benchmark/operator_coverage
 
 ```python
 python orion_benchmark/quant_operator_coverage.py >> orion_benchmark/quant_operator_coverage.md
+```
+
+5. Get transpilation time of supported ONNX Hub models with Orion:
+```python
+python orion_benchmark/transpile_models.py
 ```
