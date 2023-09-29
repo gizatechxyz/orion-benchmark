@@ -3,7 +3,7 @@ import onnx
 from datetime import datetime
 from collections import Counter
 from tabulate import tabulate
-from supported_operatorr_list import SUPPORTED_OPERATORS
+from supported_operator_list import SUPPORTED_OPERATORS
 
 
 # Specify the directory you want to search in
