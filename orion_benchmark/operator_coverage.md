@@ -1,4 +1,4 @@
-| Model                                           |   Coverage |
+| Model                                           |   Coverage (11/07/23)|
 |-------------------------------------------------|------------|
 | model/bidaf-9.onnx                              |    43.75   |
 | model/bidaf-11-int8.onnx                        |    45.4545 |
