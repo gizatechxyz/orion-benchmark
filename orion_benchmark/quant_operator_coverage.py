@@ -28,7 +28,7 @@ for onnx_file in onnx_files:
     
     # Calculate the percentage coverage of operators    
     implemented_operator_count = sum(operator_counts[op] for op in operator_types if op in SUPPORTED_OPERATORS)
-    not_implemented_operator_set = operator_types - SUPPORTED_OPERATORS
+    not_implemented_operator_set = operator_types - set(SUPPORTED_OPERATORS)
     total_operator_count = sum(operator_counts.values())
     percentage_coverage = (implemented_operator_count / total_operator_count) * 100 if total_operator_count > 0 else 0
     operator_coverage_list.append(("/".join(onnx_file.split("/")[-2:]), percentage_coverage, ", ".join(not_implemented_operator_set)))
