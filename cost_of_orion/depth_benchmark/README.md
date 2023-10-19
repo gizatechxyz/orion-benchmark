@@ -19,7 +19,8 @@ _________________________________________________________________
 ```
 
 ### Results
-The table below shows the benchmark results at varying depths:
+The table below shows the benchmark results at varying depths. 
+It's using [Platinum Prover](https://github.com/lambdaclass/lambdaworks_stark_platinum).
 
 | Depth | Cairo VM execution time (s) | Proving time (s) | Verification time (s) |
 | ----- | --------------------------- | ---------------- | --------------------- |
