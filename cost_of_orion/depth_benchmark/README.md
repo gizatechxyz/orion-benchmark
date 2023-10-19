@@ -3,7 +3,7 @@
 
 The aim of this benchmark is to test the scaling of Orion with respect to number of model layers.
 
-### Model Architecture
+### Model Summary
 ```
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
