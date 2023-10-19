@@ -21,11 +21,11 @@ _________________________________________________________________
 ### Results
 The table below shows the benchmark results at varying depths:
 
-| Depth | Proof Cairo VM execution time | Proof proving time |
-| ----- | ----------------------------- | ------------------ |
-| 1     | 0.5706441                     | 32.94817           |
-| 5     | 2.080153                      | 138.54219          |
-| 10    | 4.0620766                     | 313.24823          |
+| Depth | Cairo VM execution time (s) | Proving time (s) | Verification time (s) |
+| ----- | --------------------------- | ---------------- | --------------------- |
+| 1     | 0.5706441                   | 32.94817         | 0.0002777805          |
+| 5     | 2.080153                    | 138.54219        | 1.131792917           |
+| 10    | 4.0620766                   | 313.24823        | 2.362478041           |
 
 ### How to add new depth to the benchmark?
 
