@@ -15,7 +15,7 @@ mod OrionRunner {
         id: u8,
     }
 
-    const DEPTH: u32 = 10;
+    const DEPTH: u32 = 50;
 
     #[external(v0)]
     fn main(self: @ContractState) {
