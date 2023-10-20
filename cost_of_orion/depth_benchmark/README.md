@@ -1,7 +1,7 @@
 
 ## Depth Benchmark
 
-The aim of this benchmark is to test the scaling of Orion with respect to number of model layers.
+The aim of this benchmark is to test the scaling of Orion with respect to number of model layers. All values are fixed point [FP16.16](https://orion.gizatech.xyz/framework/numbers/fixed-point).
 
 ### Model Summary
 ```
@@ -18,9 +18,12 @@ Total params: 2,120
 _________________________________________________________________
 ```
 
-### Results
-The table below shows the benchmark results at varying depths. 
-It's using [Platinum Prover](https://github.com/lambdaclass/lambdaworks_stark_platinum).
+### Naive Method
+In this section, we present a benchmark for proving a neural network using a so-called "naive" method, which involves proving the entire neural network. 
+
+Later, we'll compare this method with other, more optimized methods for proving a neural network (e.g. recursive proofs).
+
+The table below shows the benchmark results at varying depths. It's using [Platinum Prover](https://github.com/lambdaclass/lambdaworks_stark_platinum).
 
 | Depth | Cairo VM execution time (s) | Proving time (s) | Verification time (s) |
 | ----- | --------------------------- | ---------------- | --------------------- |
