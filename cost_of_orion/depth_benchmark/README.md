@@ -27,6 +27,7 @@ It's using [Platinum Prover](https://github.com/lambdaclass/lambdaworks_stark_pl
 | 1     | 0.5706441                   | 32.94817         | 0.0002777805          |
 | 5     | 2.080153                    | 138.54219        | 1.131792917           |
 | 10    | 4.0620766                   | 313.24823        | 2.362478041           |
+| 50    | 18.231367                   | 1306.3478        | 10.16982575           |
 
 ### How to add new depth to the benchmark?
 
