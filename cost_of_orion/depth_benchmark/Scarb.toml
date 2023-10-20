@@ -1,0 +1,14 @@
+[package]
+name = "bench"
+version = "0.1.0"
+
+[dependencies]
+starknet = "2.0.2"
+orion = { git = "https://github.com/gizatechxyz/orion.git" }
+layer1 = { path = "crates/layer1" }
+layern = { path = "crates/layern" }
+
+[workspace]
+members = ["crates/layer1", "crates/layern"]
+
+[[target.starknet-contract]]
